@@ -8,7 +8,19 @@
 /* text css above hero image*/
 .hero_title {
   font-size: 4.5rem;
+  
 }
+
+/* Firefox < 16 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .hero_desc {
   font-size: 2rem;
 }
@@ -19,12 +31,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  animation: fadeIn 7s;
 }
-/* about section image css */
-/* .imageAboutPage {
-  width: 100%;
-  border-radius: 1%;
-} */
 
 .GHProfile {
   max-width: 100%;
